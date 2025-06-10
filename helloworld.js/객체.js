@@ -42,5 +42,5 @@ const deepCopy = (origin) => {
 };
 
 const person3 = deepCopy(person);
-person3.city = "가마쿠라";
+//person3.city = "가마쿠라";
 console.log('깊은 복사', person3)
