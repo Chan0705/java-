@@ -18,3 +18,7 @@ e++;
 console.log('e++', e++);
 e--;
 console.log('e--', e);
+
+//논리 연산자
+console.log('a === b && a < c', a === b && a < c);
+console.log('a === b || a < c', a === b || a < c);
