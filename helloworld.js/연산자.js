@@ -38,3 +38,6 @@ console.log('a !=b', a != b);
 const result = a === b ? 'a와 b는 같습니다' : 'a와 b는 다릅니다';
 console.log(result)
 // :는 or와 같은 의미
+
+// 나머지 연산자 (%)
+console.log(5 % 3); // 두 수를 나눈 뒤의 나머지를 반환합니다.

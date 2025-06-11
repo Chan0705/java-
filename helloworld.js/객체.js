@@ -29,18 +29,19 @@ console.log('두번째 얕은 복사', person2)
 
 
 // 깊은 복사
-const deepCopy = (origin) => {
-    const result = {};
-    for (let key in origin) {
-        if (origin[key] !== null && typeof origin[key] == 'object') {
-            result[key] = deepCopy(origin[key]);
+// console.log person3 = (...person) > ... 붙이면 깊복
+const deepCopy = (person) => {
+    const result = {};  // result를 상수로 선언
+    for (let key in person) { // 객체를 반복문 실행
+        if (typeof person[key] === 'object') { // 객체 안 KEY값의 타입이 object인지 확인
+            console.log('깊은 복사중', key, '값은', person[key]);
+            result[key] = deepCopy(person[key]); // 재귀함수(같은 함수를 중복 실행) 이용
         } else {
-            result[key] = origin[key]
+            result[key] = person[key]
         }
     }
     return result;
 };
 
-const person3 = deepCopy(person);
-//person3.city = "가마쿠라";
-console.log('깊은 복사', person3)
+const person3 = deepCopy(person)
+console.log
