@@ -30,6 +30,7 @@ const totalArray = filterArray.reduce((acc, cur) => {
     return acc + cur
 });
 console.log(totalArray);
+// 배열 합산
 
 //한번에 하는법
 // const oneCombo = arr1
