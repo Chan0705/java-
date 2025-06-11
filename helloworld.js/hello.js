@@ -1,15 +1,25 @@
-const a = 1
-const b = 2
+//const temperature = 30
 
-//console.log("Hello, wolrd!123");
+// if (temperature > 25) {
+//     console.log("날씨가 덥다.");
+// } else if (temperature >= 20) { console.log("날씨가 선선하다"); }
+// else if (temperature < 20) { console.log("날씨가 춥다"); }
 
-//console.log(5 !== "5");
 
-const result = a === b ? 'a와 b는 같습니다' : 'a와 b는 다릅니다';
-console.log(result)
+let a = 1
+let b = 2
+let c = 3
 
-let k = 0;
-do {
-    console.log('지금 현재 k 값은', k, '입니다');
-    k++;
-} while (k < 10);
+// switch (a) {
+//     case b:
+//         console.log('a는 b와 다릅니다');
+//         break;
+//     case c:
+//         console.log('a는 c와 같습니다');
+//         break;
+//     default:
+//         console.log('a는 b나 c와 같지 않습니다')
+// }
+
+console.log(a++)
+console.log(a)

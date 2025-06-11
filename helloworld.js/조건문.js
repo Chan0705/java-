@@ -24,3 +24,4 @@ switch (a) {
     default:
         console.log('a는 b나 c와 같지 않습니다')
 }
+// break가 없으면 그 아래 코드를 계속해서 실행
