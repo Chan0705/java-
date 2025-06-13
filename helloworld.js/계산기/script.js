@@ -1,5 +1,5 @@
 const display = document.getElementById('display')
-const buttons = document.querySelector('buttons') // 모든 버튼
+const buttons = document.querySelectorAll('button') // 모든 버튼 요소를 가져오는 것, class 아님 주의
 
 let current = ''; // 현재값
 let operator = ''; // 연산값
@@ -9,7 +9,7 @@ buttons.forEach((btn) => {
     // 끌고온 모든 버튼 반복
     btn.addEventListener('click', () => {
         // 끌고온 버튼마다 클릭 이벤트 생성
-        const value = btn.textcontent; // 버튼 개당의 text 값
+        const value = btn.textContent; // 버튼 개당의 text 값
 
         if (value === "c") {
             // 초기화 버튼 클릭시 작동
@@ -61,4 +61,3 @@ buttons.forEach((btn) => {
         }
     });
 });
-
