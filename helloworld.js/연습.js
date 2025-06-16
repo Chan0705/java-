@@ -66,12 +66,25 @@
 // });
 
 
-const score = [51, 25, 65, 80, 97, 77]
+// const score = [51, 25, 65, 80, 97, 77]
 
-score.forEach(function (num, i) {
-    const average = score.reduce((acc, cur) => {
-        return acc + cur;
-    })
-})
+// score.forEach(function (num, i) {
+//     const average = score.reduce((acc, cur) => {
+//         return acc + cur;
+//     })
+// })
 
-console.log(average);
+// console.log(average);
+
+
+/**
+ * 전개 연산자 '...'
+ 배열 생성 후 ...+ 배열이름 시 배열이 그대로 복사됨
+ 생성된 배열 뒤에 추가 항목을 덧붙이기도 가능
+ ex)
+const $array = [1, 2, 3, 4, 5, 6];
+const $array2 = [...$array, 7, 8, 9];
+
+console.log($array);
+console.log($array2); 
+ */
