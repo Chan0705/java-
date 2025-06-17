@@ -15,14 +15,8 @@
 
 //console.log(array.concat(array2));
 
-
-
-
-
 // const anyway = array
 // console.log(anyway);
-
-
 
 // const score = [];
 
@@ -88,3 +82,36 @@ const $array2 = [...$array, 7, 8, 9];
 console.log($array);
 console.log($array2); 
  */
+
+
+// const checkNumber = (num) => {
+//     if (num % 2 === 0) {
+//         console.log(`${num}은 짝수`)
+//     } else if (num % 2 === 1) {
+//         console.log(`${num}은 홀수`)
+//     }
+//     };
+
+// checkNumber(-4);
+
+// function add(a, b) {return a + b;}
+// console.log(add(1, 2));
+// const add = ((매개변수) => { })
+// const add = ((a, b) => {
+//     console.log(a + b);
+// });
+// add(1, 2);
+
+// function greet(name) {
+//     return "안녕하세요, " + name + "님!";
+// }
+
+const greet = (name) => {
+    return console.log(name + '입니다. 잘부탁드립니다.')
+
+}
+greet('홍길동');
+
+// function square(n) {
+//     return n * n;
+// }
