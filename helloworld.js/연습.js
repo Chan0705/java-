@@ -106,12 +106,19 @@ console.log($array2);
 //     return "안녕하세요, " + name + "님!";
 // }
 
-const greet = (name) => {
-    return console.log(name + '입니다. 잘부탁드립니다.')
+// const greet = (name) => {
+//     return (`${name} 입니다. 잘부탁드립니다.`);
 
-}
-greet('홍길동');
+// };
+
+// console.log(greet('찬'));
 
 // function square(n) {
 //     return n * n;
 // }
+
+const square = (n) => {
+    return n * n;
+};
+
+console.log(square(2));
