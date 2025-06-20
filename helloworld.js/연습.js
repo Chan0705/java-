@@ -162,7 +162,7 @@ function sayHello(name, callback) {
 sayHello("인파", function printing(name) {
 	console.log(name); // 안녕하세요 내 이름은 인파 입니다.
 });
-
+//----------------------//
 sayHello("인파", (callback) => {
 	console.log(callback); // 안녕하세요 내 이름은 인파 입니다.
 });
