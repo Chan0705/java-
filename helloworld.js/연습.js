@@ -117,8 +117,52 @@ console.log($array2);
 //     return n * n;
 // }
 
-const square = (n) => {
-    return n * n;
-};
+// const square = (n) => {
+//     return n * n;
+// };
 
-console.log(square(2));
+// console.log(square(2));
+
+
+// const message = function() {
+//     console.log("This message is shown after 3 seconds");
+// }
+
+// setTimeout(message, 3000);
+
+// console.log(message);
+
+// //------------------
+
+// setTimeout(function() {
+//     console.log("This message is shown after 3 seconds");
+// }, 3000);
+
+// function add(x, y) {
+//     return x + y;
+// }
+
+// function addAndAdd(i) {
+//     console.log("완료되었습니다.");
+//     return i;
+// }
+
+// const randomNumber = addAndAdd(3);
+
+// setTimeout(() => {
+//     add(1, 2);
+// }, 3000);
+
+function sayHello(name, callback) {
+    const words = '안녕하세요 내 이름은 ' + name + ' 입니다.';
+    
+    callback(words); // 매개변수의 함수(콜백 함수) 호출
+}
+
+sayHello("인파", function printing(name) {
+	console.log(name); // 안녕하세요 내 이름은 인파 입니다.
+});
+
+sayHello("인파", (callback) => {
+	console.log(callback); // 안녕하세요 내 이름은 인파 입니다.
+});
