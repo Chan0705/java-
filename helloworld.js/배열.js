@@ -46,7 +46,9 @@ const humansArray = ["강백호", "송태섭", "서태웅", "정대만", "채치
 
 
 // concat: 배열 합치기 > array와 array2와 합치기
-// 'console.log([...array, ...array2])'랑 'array.concat(array2)' 같이 사용 가능
+// 'console.log([...array, ...array2])'랑 'array.concat(array2)'는 동일
+// spread 연산자 '...'는 ...배열을 전부 부른다는 뜻
+
 
 // indexof: 배열 위치 찾기
 // console.log(array.indexOf(a)); / a배열에 위치한 값 검색
@@ -62,8 +64,9 @@ const humansArray = ["강백호", "송태섭", "서태웅", "정대만", "채치
 
 // // filter: 조건에 맞는 값만 추출해서 새로운 배열로 생성
 // const filterArray = array.filter((e) => e % 2 === 1);
-//  >> 기존 array 배열에서 나누기 2했을 때 1이 남는 값들만 출력력
+//  >> 기존 array 배열에서 나누기 2했을 때 1이 남는 값들만 출력
 // console.log(filterArray);
+// 조건문 (a,b)에서 a에 들어가는 것은 배열에서 데이터값, b는 인덱스값 고정
 
 
 // find: 조건에 맞는 '첫번째 값'을 반환
@@ -87,6 +90,11 @@ const humansArray = ["강백호", "송태섭", "서태웅", "정대만", "채치
 // const realSortArray = nonSortArray.sort((a, b) => a - b);
 // console.log(realSortArray);
 
+// 중복제거 함수 SET
+const li = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5]
+const ii = new Set(li);
+
+console.log(ii);
 
 //배열의 길이를 출력
 //console.log(array.length);

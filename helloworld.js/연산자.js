@@ -24,20 +24,20 @@ console.log('e--', e);
 
 //논리 연산자
 console.log('a === b && a < c', a === b && a < c);
-// 둘 중 하나라도 f면 f
+// 둘 중 하나라도 f면 false
 console.log('a === b || a < c', a === b || a < c);
-// 둘 중 하나라도 t면 t
+// 둘 중 하나라도 t면 true
 
 //부정 연산자
 console.log(!false);
 console.log('a !==b', a !== b);
 console.log('a !=b', a != b);
-
-
-// 삼항 연산자
-const result = a === b ? 'a와 b는 같습니다' : 'a와 b는 다릅니다';
-console.log(result)
-// :는 or와 같은 의미
+// 함수 앞에서 !를 붙여서도 사용가능함
+// console.log(!a); = console.log(a !== 'a');
 
 // 나머지 연산자 (%)
-console.log(5 % 3); // 두 수를 나눈 뒤의 나머지를 반환합니다.
+console.log(5 % 3);
+// 두 수를 나눈 뒤의 나머지를 반환합니다.
+// 출력 값이 짝수인지 홀수인지 확인하기 위해 자주 사용
+// ex) 5 % 3 은 홀수이다 > 5/3= 2가남음 > false임.
+

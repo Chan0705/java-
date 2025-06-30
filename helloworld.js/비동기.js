@@ -36,6 +36,8 @@ const ws = (msg, ms) => {
         );
 };
 
+// promise > 동기비동기 한번에 처리하는 문법
+
 const run = async () => {
     await ws('1', 1000); // 1초 뒤에 실행
     await ws('1', 2000); // 2초 뒤에 실행

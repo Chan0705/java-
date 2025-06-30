@@ -26,3 +26,12 @@ const fetchData = async () => {
 };
 
 fetchData();
+
+
+// rest api
+// post put get delet
+// get 전체 게시물 가져오기/특정 ID 게시물 가져오기
+// post 게시물 생성
+// put 게시물 수정
+// rest api의 기본 틀은 정형화되어있음.
+// jwt 개념

@@ -13,9 +13,12 @@ const person = {
     },
 };
 
+// 객체 안에 'name''age'~ > key 값. key에 해당하는 내용은 value값
 //console.log(`hi ${person.name}`);
 // '가 아닌 `
 
+// console.log(person.key) or ([key])
+// --------------
 
 // 옅은 복사
 const person2 = { ...person }
@@ -45,3 +48,5 @@ const deepCopy = (person) => {
 
 const person3 = deepCopy(person)
 console.log
+
+// let keys = Object.keys(object) 객체의 키값을 배열로 변환해서 보여줌
