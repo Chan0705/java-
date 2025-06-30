@@ -23,3 +23,5 @@ const arrowFunction = (x, y) => {
 };
 
 console.log(arrowFunction(c, b));
+
+// 콜백 함수
